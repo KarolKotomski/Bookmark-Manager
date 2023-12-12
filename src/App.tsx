@@ -1,8 +1,11 @@
 function App() {
-	return <div className="App">
-		<p>test</p>
-		<h1>test</h1>
-  </div>;
+  return (
+    <>
+      <header></header>
+      <main></main>
+      <footer></footer>
+    </>
+  );
 }
 
 export default App;

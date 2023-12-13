@@ -18,7 +18,9 @@ const Navbar = () => {
   };
   return (
     <div className="container flex items-center justify-between py-12 text-sm tracking-widest">
-      <img src={mainLogo} alt="main logo" className="cursor-pointer" />
+      <div className="flex items-center">
+        <img src={mainLogo} alt="main logo" className="cursor-pointer" />
+      </div>
       <nav>
         <ul className="flex items-center gap-12">
           {handleMapping()}

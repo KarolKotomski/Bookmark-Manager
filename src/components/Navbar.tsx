@@ -17,7 +17,7 @@ const Navbar = () => {
     });
   };
   return (
-    <div className="font-me container flex items-center justify-between py-12 text-sm tracking-widest">
+    <div className="container flex items-center justify-between py-12 text-sm tracking-widest">
       <img src={mainLogo} alt="main logo" className="cursor-pointer" />
       <nav>
         <ul className="flex items-center gap-12">

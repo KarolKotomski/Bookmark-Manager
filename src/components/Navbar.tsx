@@ -22,7 +22,7 @@ const Navbar = () => {
         <img src={mainLogo} alt="main logo" className="cursor-pointer" />
       </div>
       <nav>
-        <ul className="flex items-center gap-12">
+        <ul className="flex items-center gap-10 px-8">
           {handleMapping()}
           <ButtonHeader />
           <ButtonHamburger />

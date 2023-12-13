@@ -15,9 +15,11 @@ type Props = {
 
 const BannerSideTextBlock = ({ content }: Props) => {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex w-4/5 flex-col justify-center gap-6">
       {content.isHero ? (
-        <h1 className="text-5xl font-medium text-blueDark">{content.header}</h1>
+        <h1 className="text-[2.75rem] font-medium leading-[3rem] text-blueDark">
+          {content.header}
+        </h1>
       ) : (
         <h2 className="text-3xl font-medium text-blueDark">{content.header}</h2>
       )}

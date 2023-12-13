@@ -7,7 +7,7 @@ const HeroBanner = () => {
     <div className="relative py-14">
       <div className="absolute bottom-0 right-0 -z-10 h-[65%] w-[40%] rounded-l-full bg-blueBright pt-10"></div>
       <div className="container grid grid-cols-2">
-        <div className="w-4/5 flex">
+        <div className="flex max-w-[80%]">
           <TextBlock content={textBlockElementsList[0]} />
         </div>
         <div>

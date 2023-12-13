@@ -15,13 +15,13 @@ type Props = {
 
 const TextBlock = ({ content }: Props) => {
   return (
-    <div className="flex flex-col justify-center gap-6">
+    <div className="flex flex-col justify-center gap-7">
       {content.isHero ? (
         <h1 className="text-[2.75rem] font-medium leading-[3rem] text-blueDark">
           {content.header}
         </h1>
       ) : (
-        <h2 className="text-3xl font-medium text-blueDark">{content.header}</h2>
+        <h2 className="text-4xl font-medium text-blueDark">{content.header}</h2>
       )}
       <p className="text-grealish">{content.paragraph}</p>
       <div className="flex w-fit gap-5">

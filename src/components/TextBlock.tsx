@@ -6,16 +6,16 @@ type content = {
   header: string;
   paragraph: string;
   isButton: boolean;
-  buttonText: string[];
+  buttonText?: string[];
 };
 
 type Props = {
   content: content;
 };
 
-const BannerSideTextBlock = ({ content }: Props) => {
+const TextBlock = ({ content }: Props) => {
   return (
-    <div className="flex w-4/5 flex-col justify-center gap-6">
+    <div className="flex flex-col justify-center gap-6">
       {content.isHero ? (
         <h1 className="text-[2.75rem] font-medium leading-[3rem] text-blueDark">
           {content.header}
@@ -25,10 +25,10 @@ const BannerSideTextBlock = ({ content }: Props) => {
       )}
       <p className="text-grealish">{content.paragraph}</p>
       <div className="flex w-fit gap-5">
-        {content.isButton && (
+        {content.isButton && content.buttonText?.[0] && (
           <ButtonStandard label={content.buttonText[0]} style="blue" />
         )}
-        {content.isButton && (
+        {content.isButton && content.buttonText?.[1] && (
           <ButtonStandard label={content.buttonText[1]} style="grey" />
         )}
       </div>
@@ -36,4 +36,4 @@ const BannerSideTextBlock = ({ content }: Props) => {
   );
 };
 
-export default BannerSideTextBlock;
+export default TextBlock;

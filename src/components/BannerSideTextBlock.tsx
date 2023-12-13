@@ -1,3 +1,5 @@
+import ButtonStandard from "./ButtonStandard";
+
 type content = {
   id: number;
   isHero: boolean;
@@ -15,16 +17,18 @@ const BannerSideTextBlock = ({ content }: Props) => {
   return (
     <div className="flex flex-col gap-10">
       {content.isHero ? (
-        <h1 className="text-5xl font-medium">{content.header}</h1>
+        <h1 className="text-5xl font-medium text-blueDark">{content.header}</h1>
       ) : (
-        <h2 className="text-3xl font-medium">{content.header}</h2>
+        <h2 className="text-3xl font-medium text-blueDark">{content.header}</h2>
       )}
       <p className="text-grealish">{content.paragraph}</p>
-      <div>
-        {content.isButton &&
-          content.buttonText.map((element, index) => {
-            return <button key={index}>{element}</button>;
-          })}
+      <div className="flex w-fit gap-5">
+        {content.isButton && (
+          <ButtonStandard label={content.buttonText[0]} style="blue" />
+        )}
+        {content.isButton && (
+          <ButtonStandard label={content.buttonText[1]} style="grey" />
+        )}
       </div>
     </div>
   );

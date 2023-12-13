@@ -9,7 +9,7 @@ const Navbar = () => {
       return (
         <li
           key={index}
-          className="hover:text-redBright cursor-pointer transition duration-300"
+          className="cursor-pointer text-blueDark transition duration-300 hover:text-redBright"
         >
           {element}
         </li>

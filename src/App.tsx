@@ -1,7 +1,11 @@
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
     <>
-      <header></header>
+      <header>
+        <Navbar />
+      </header>
       <main></main>
       <footer></footer>
     </>

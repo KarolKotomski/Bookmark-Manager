@@ -1,4 +1,4 @@
-import ButtonStandard from "./ButtonStandard";
+import ButtonStandard from "./buttons/ButtonStandard";
 
 const Contact = () => {
   return (

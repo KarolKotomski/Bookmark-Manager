@@ -112,3 +112,32 @@ export const downloadContentList = [
     paragraph: "Minimum version 46",
   },
 ];
+
+/** FAQ */
+
+export const faqContentList = [
+  {
+    id: 1,
+    question: "What is Bookmark?",
+    answer:
+      "Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non lingula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non lingula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non lingula. Suspendisse imperdiet.",
+  },
+  {
+    id: 2,
+    question: "How can I request a new browser?",
+    answer:
+      "Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non lingula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non lingula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non lingula. Suspendisse imperdiet.",
+  },
+  {
+    id: 3,
+    question: "Is there a mobile app?",
+    answer:
+      "Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non lingula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non lingula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non lingula. Suspendisse imperdiet.",
+  },
+  {
+    id: 4,
+    question: "What about other Chromium browsers?",
+    answer:
+      "Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non lingula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non lingula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non lingula. Suspendisse imperdiet.",
+  },
+];

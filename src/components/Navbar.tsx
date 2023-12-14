@@ -1,7 +1,7 @@
 import { navElementsList } from "../data/data";
-import ButtonHamburger from "./ButtonHamburger";
-import ButtonHeader from "./ButtonHeader";
+import ButtonHeader from "./buttons/ButtonHeader";
 import LogoIcon from "./icons/LogoBookmark";
+import HamburgerIcon from "./icons/HamburgerIcon";
 
 const Navbar = () => {
   const handleMapping = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
         <ul className="flex items-center gap-10">
           {handleMapping()}
           <ButtonHeader />
-          <ButtonHamburger />
+          <HamburgerIcon />
         </ul>
       </nav>
     </div>

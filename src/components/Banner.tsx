@@ -1,5 +1,5 @@
 import BackgroundShape from "./BackgroundShape";
-import ButtonStandard from "./ButtonStandard";
+import ButtonStandard from "./buttons/ButtonStandard";
 
 type content = {
   id: number;

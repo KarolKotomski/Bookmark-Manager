@@ -8,6 +8,7 @@ type content = {
   paragraph: string;
   buttonText: string[];
   image: string;
+  altText: string;
 };
 
 type Props = {
@@ -22,7 +23,7 @@ const Banner = ({ content }: Props) => {
         <div className="flex max-w-[80%]">
           <div className="flex flex-col justify-center gap-7">
             {content.isHero ? (
-              <h1 className="text-[2.75rem] font-medium leading-[3rem] text-blueDark">
+              <h1 className="text-5xl font-medium leading-[3.25rem] text-blueDark">
                 {content.header}
               </h1>
             ) : (
@@ -48,10 +49,7 @@ const Banner = ({ content }: Props) => {
           </div>
         </div>
         <div>
-          <img
-            src={content.image}
-            alt="tablet device showing bookmark website"
-          />
+          <img src={content.image} alt={content.altText} />
         </div>
       </div>
     </div>

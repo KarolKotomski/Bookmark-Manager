@@ -18,6 +18,7 @@ export const bannerContentList = [
       "A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.",
     buttonText: ["Get it on Chrome", "Get it on Firefox"],
     image: bannerHero,
+    altText: "tablet device showing bookmark website",
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ export const bannerContentList = [
       "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.",
     buttonText: ["More Info"],
     image: bannerTab1,
+    altText: "opened application window",
   },
   {
     id: 3,
@@ -36,6 +38,7 @@ export const bannerContentList = [
       "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.",
     buttonText: ["More Info"],
     image: bannerTab2,
+    altText: "opened application window with magnifying glass",
   },
   {
     id: 4,
@@ -45,6 +48,8 @@ export const bannerContentList = [
       "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.",
     buttonText: ["More Info"],
     image: bannerTab3,
+    altText:
+      "opened application window with cell phone device and two people interacting",
   },
 ];
 
@@ -56,19 +61,16 @@ export const featuresElementsList = [
 
 export const sectionHeadContentList = [
   {
-    id: 1,
     header: "Features",
     paragraph:
       "Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.",
   },
   {
-    id: 2,
     header: "Download the extension",
     paragraph:
       "We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.",
   },
   {
-    id: 3,
     header: "Frequently Asked Questions",
     paragraph:
       "Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.",

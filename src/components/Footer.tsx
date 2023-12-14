@@ -18,14 +18,16 @@ const Footer = () => {
   };
   return (
     <div className="bg-blueDark">
-      <div className="container flex items-center justify-between py-12 text-sm tracking-widest">
-        <div className="flex items-center gap-10">
+      <div className="container flex flex-col items-center gap-10 py-8 text-sm tracking-widest md:flex-row md:justify-between">
+        <div className="flex flex-col items-center gap-10 md:flex-row ">
           <LogoIcon textFillColor="white" />
           <nav>
-            <ul className="flex items-center gap-10 px-6">{handleMapping()}</ul>
+            <ul className="flex flex-col gap-7 px-6 text-center md:flex-row">
+              {handleMapping()}
+            </ul>
           </nav>
         </div>
-        <div className="flex items-center gap-10">
+        <div className="flex items-center justify-center gap-10">
           <FacebookIcon />
           <TwitterIcon />
         </div>

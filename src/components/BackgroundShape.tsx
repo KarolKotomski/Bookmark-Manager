@@ -1,6 +1,6 @@
 const BackgroundShape = () => {
   return (
-    <div className="absolute bottom-0 right-0 -z-10 h-[65%] w-[40%] rounded-l-full bg-blueBright pt-10"></div>
+    <div className="absolute left-[15%] top-[30%] -z-10 h-80 w-full rounded-l-full bg-blueBright "></div>
   );
 };
 

@@ -3,11 +3,17 @@ import bannerTab1 from "../assets/illustration-features-tab-1.svg";
 import bannerTab2 from "../assets/illustration-features-tab-2.svg";
 import bannerTab3 from "../assets/illustration-features-tab-3.svg";
 
-//Navbar&Footer data:
+import chromeLogo from "../assets/logo-chrome.svg";
+import firefoxLogo from "../assets/logo-firefox.svg";
+import operaLogo from "../assets/logo-opera.svg";
+
+//HEADER AND FOOTER data:
 
 export const navElementsList = ["FEATURES", "PRICING", "CONTACT"];
 
-//Main data:
+//MAIN DATA:
+
+/** Banners */
 
 export const bannerContentList = [
   {
@@ -53,11 +59,15 @@ export const bannerContentList = [
   },
 ];
 
+/** Features */
+
 export const featuresElementsList = [
   "Simple Bookmarking",
   "Speedy Searching",
   "Easy Sharing",
 ];
+
+/** SectionHead */
 
 export const sectionHeadContentList = [
   {
@@ -74,5 +84,31 @@ export const sectionHeadContentList = [
     header: "Frequently Asked Questions",
     paragraph:
       "Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.",
+  },
+];
+
+/** Download */
+
+export const downloadContentList = [
+  {
+    id: 1,
+    icon: chromeLogo,
+    altText: "chrome browser logo",
+    header: "Add to Chrome",
+    paragraph: "Minimum version 62",
+  },
+  {
+    id: 2,
+    icon: firefoxLogo,
+    altText: "firefox browser logo",
+    header: "Add to Firefox",
+    paragraph: "Minimum version 55",
+  },
+  {
+    id: 3,
+    icon: operaLogo,
+    altText: "opera browser logo",
+    header: "Add to Opera",
+    paragraph: "Minimum version 46",
   },
 ];

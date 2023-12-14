@@ -20,7 +20,7 @@ const Navbar = () => {
     <div className="container flex items-center justify-between py-12 text-sm tracking-widest">
       <LogoIcon textFillColor="standard" />
       <nav>
-        <ul className="flex items-center gap-10 px-6">
+        <ul className="flex items-center gap-10">
           {handleMapping()}
           <ButtonHeader />
           <ButtonHamburger />

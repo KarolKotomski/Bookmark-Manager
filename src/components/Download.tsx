@@ -1,7 +1,5 @@
 const Download = () => {
-  return (
-    <div>Download</div>
-  )
-}
+  return <div>Download</div>;
+};
 
-export default Download
+export default Download;

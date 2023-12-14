@@ -1,6 +1,11 @@
 import Features from "./components/Features";
-import HeroBanner from "./components/HeroBanner";
+import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
+import { bannerContentList } from "./data/data";
+import Download from "./components/Download";
+import Faq from "./components/Faq";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -9,10 +14,25 @@ function App() {
         <Navbar />
       </header>
       <main>
-        <HeroBanner />
-        <Features />
+        <section>
+          <Banner content={bannerContentList[0]} />
+        </section>
+        <section>
+          <Features />
+        </section>
+        <section>
+          <Download />
+        </section>
+        <section>
+          <Faq />
+        </section>
+        <section>
+          <Contact />
+        </section>
       </main>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

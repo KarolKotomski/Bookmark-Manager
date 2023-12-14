@@ -1,18 +1,18 @@
 type Props = {
   label: string;
-  style: string;
+  applyStyle: string;
 };
 
-const ButtonStandard = ({ label, style }: Props) => {
+const ButtonStandard = ({ label, applyStyle }: Props) => {
   const blueButtonStyle = `border-blueBright bg-blueBright text-white hover:bg-white hover:text-blueBright`;
   const greyButtonStyle = `border-gray-100 bg-gray-100 text-gray-500 hover:bg-white hover:border-gray-500`;
 
   let buttonStyle = "";
 
-  if (style === "blue") {
+  if (applyStyle === "blue") {
     buttonStyle = blueButtonStyle;
   }
-  if (style === "grey") {
+  if (applyStyle === "grey") {
     buttonStyle = greyButtonStyle;
   }
 

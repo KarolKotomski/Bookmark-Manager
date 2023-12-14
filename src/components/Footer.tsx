@@ -1,5 +1,7 @@
-import mainLogo from "../assets/logo-bookmark.svg";
 import { navElementsList } from "../data/data";
+import FacebookIcon from "./icons/FacebookIcon";
+import TwitterIcon from "./icons/TwitterIcon";
+import LogoIcon from "./icons/LogoBookmark";
 
 const Footer = () => {
   const handleMapping = () => {
@@ -17,16 +19,16 @@ const Footer = () => {
   return (
     <div className="bg-blueDark">
       <div className="container flex items-center justify-between py-12 text-sm tracking-widest">
-        <div className="flex items-center">
-          <img
-            src={mainLogo}
-            alt="main logo"
-            className="cursor-pointer"
-          />
+        <div className="flex items-center gap-10">
+          <LogoIcon textFillColor="white" />
+          <nav>
+            <ul className="flex items-center gap-10 px-6">{handleMapping()}</ul>
+          </nav>
         </div>
-        <nav>
-          <ul className="flex items-center gap-10 px-6">{handleMapping()}</ul>
-        </nav>
+        <div className="flex items-center gap-10">
+          <FacebookIcon />
+          <TwitterIcon />
+        </div>
       </div>
     </div>
   );

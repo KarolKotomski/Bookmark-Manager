@@ -1,7 +1,7 @@
-import mainLogo from "../assets/logo-bookmark.svg";
 import { navElementsList } from "../data/data";
 import ButtonHamburger from "./ButtonHamburger";
 import ButtonHeader from "./ButtonHeader";
+import LogoIcon from "./icons/LogoBookmark";
 
 const Navbar = () => {
   const handleMapping = () => {
@@ -18,9 +18,7 @@ const Navbar = () => {
   };
   return (
     <div className="container flex items-center justify-between py-12 text-sm tracking-widest">
-      <div className="flex items-center">
-        <img src={mainLogo} alt="main logo" className="cursor-pointer" />
-      </div>
+      <LogoIcon textFillColor="standard" />
       <nav>
         <ul className="flex items-center gap-10 px-6">
           {handleMapping()}

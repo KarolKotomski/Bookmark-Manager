@@ -10,7 +10,7 @@ type Props = {
 const SectionHead = ({ content }: Props) => {
   return (
     <div className="flex max-w-[35rem] flex-col items-center gap-7 pb-5 text-center">
-      <h2 className="text-4xl font-medium text-blueDark">{content.header}</h2>
+      <h2 className="text-[2rem] font-medium text-blueDark">{content.header}</h2>
       <p className="text-grealish">{content.paragraph}</p>
     </div>
   );

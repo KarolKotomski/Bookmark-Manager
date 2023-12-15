@@ -4,7 +4,7 @@ import TwitterIcon from "./icons/TwitterIcon";
 import LogoIcon from "./icons/LogoBookmark";
 
 const Footer = () => {
-  const handleMapping = () => {
+  const handleNavElementsMapping = () => {
     return navElementsList.map((element, index) => {
       return (
         <li
@@ -20,10 +20,10 @@ const Footer = () => {
     <div className="bg-blueDark">
       <div className="container flex flex-col items-center gap-10 py-8 text-sm tracking-widest md:flex-row md:justify-between">
         <div className="flex flex-col items-center gap-10 md:flex-row ">
-          <LogoIcon textFillColor="white" />
+          <LogoIcon style="blue/white/white" />
           <nav>
             <ul className="flex flex-col gap-7 px-6 text-center md:flex-row">
-              {handleMapping()}
+              {handleNavElementsMapping()}
             </ul>
           </nav>
         </div>

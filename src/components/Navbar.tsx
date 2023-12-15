@@ -1,10 +1,26 @@
+import { useEffect, useState } from "react";
 import { navElementsList } from "../data/data";
 import ButtonHeader from "./buttons/ButtonHeader";
 import LogoIcon from "./icons/LogoBookmark";
 import HamburgerIcon from "./icons/HamburgerIcon";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
-  const handleMapping = () => {
+  const [isMenuActive, setIsMenuActive] = useState(false);
+
+  const handleClick = () => {
+    setIsMenuActive(!isMenuActive);
+  };
+
+  useEffect(() => {
+    if (isMenuActive === true) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isMenuActive]);
+
+  const handleNavElementsMapping = () => {
     return navElementsList.map((element, index) => {
       return (
         <li
@@ -17,20 +33,24 @@ const Navbar = () => {
     });
   };
   return (
-    <div className="container flex items-center justify-between py-12 text-sm tracking-widest">
-      <LogoIcon textFillColor="standard" />
-      <nav className="flex items-center gap-10">
-        <ul className="hidden items-center gap-10 lg:flex">
-          {handleMapping()}
-          <div className="hidden md:block">
-            <ButtonHeader />
+    <>
+      <MobileMenu isMenuActive={isMenuActive} handleCloseMenu={handleClick} />
+
+      <div className="container flex items-center justify-between py-9 md:py-12 text-sm tracking-widest">
+        <LogoIcon style="blue/white/dark" />
+        <nav className="flex items-center gap-10">
+          <ul className="hidden items-center gap-10 lg:flex">
+            {handleNavElementsMapping()}
+            <div className="hidden md:block">
+              <ButtonHeader />
+            </div>
+          </ul>
+          <div onClick={handleClick} className="lg:invisible">
+            <HamburgerIcon />
           </div>
-        </ul>
-        <div className="lg:invisible">
-          <HamburgerIcon />
-        </div>
-      </nav>
-    </div>
+        </nav>
+      </div>
+    </>
   );
 };
 

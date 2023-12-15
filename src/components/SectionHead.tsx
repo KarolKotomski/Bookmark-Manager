@@ -17,7 +17,7 @@ const SectionHead = ({ header, paragraph, isHero }: Props) => {
         </h2>
       )}
 
-      <p className="text-sm leading-6 text-grealish md:text-lg">{paragraph}</p>
+      <p className="text-sm leading-6 text-grealish md:text-lg pt-7">{paragraph}</p>
     </>
   );
 };

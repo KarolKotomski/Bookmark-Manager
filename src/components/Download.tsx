@@ -5,7 +5,7 @@ import DownloadUnit from "./DownloadUnit";
 const Download = () => {
   return (
     <div className="container flex flex-col items-center justify-center gap-5 py-10 md:gap-10">
-      <div className="flex max-w-[34rem] flex-col items-center gap-4 p-5 text-center md:gap-7">
+      <div className="flex max-w-[34rem] flex-col items-center p-5 text-center md:gap-0">
         <SectionHead
           header={sectionHeadContentList[1].header}
           paragraph={sectionHeadContentList[1].paragraph}

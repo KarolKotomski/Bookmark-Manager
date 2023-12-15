@@ -18,13 +18,23 @@ type Props = {
 const Banner = ({ content }: Props) => {
   return (
     <>
-      <div className="flex flex-col-reverse items-center lg:grid lg:grid-cols-2">
-        <div className="flex flex-col gap-7 p-5 text-center lg:p-0 lg:pr-5 lg:text-left xl:max-w-[80%]">
-          <SectionHead
-            header={content.header}
-            paragraph={content.paragraph}
-            isHero={content.isHero}
-          />
+      <div
+        className={`flex flex-col-reverse items-center pt-5 ${
+          content.isHero ? "lg:flex-row" : "lg:flex-row-reverse"
+        }`}
+      >
+        <div
+          className={`flex flex-col gap-7 p-5 text-center lg:w-1/2 lg:p-0 lg:text-left ${
+            !content.isHero && "lg:ml-20"
+          }`}
+        >
+          <div className="xl:max-w-[80%]">
+            <SectionHead
+              header={content.header}
+              paragraph={content.paragraph}
+              isHero={content.isHero}
+            />
+          </div>
           <div className="flex w-full justify-center gap-3 lg:justify-start lg:gap-5">
             {content.buttonText[0] && (
               <ButtonStandard label={content.buttonText[0]} applyStyle="blue" />
@@ -35,8 +45,8 @@ const Banner = ({ content }: Props) => {
           </div>
         </div>
 
-        <div className="flex w-full items-center justify-center">
-          <img src={content.image} alt={content.altText} />
+        <div className="flex w-full items-center justify-center lg:w-1/2 lg:justify-start">
+          <img src={content.image} alt={content.altText} className="w-full" />
         </div>
       </div>
     </>

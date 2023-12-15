@@ -45,7 +45,7 @@ const Banner = ({ content }: Props) => {
           </div>
         </div>
 
-        <div className="flex w-full items-center justify-center lg:w-1/2 lg:justify-start">
+        <div className="flex w-full items-center justify-center lg:max-w-[50%] lg:justify-start">
           <img src={content.image} alt={content.altText} className="w-full" />
         </div>
       </div>

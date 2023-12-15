@@ -1,11 +1,10 @@
 import Features from "./components/Features";
-import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
-import { bannerContentList } from "./data/data";
 import Download from "./components/Download";
 import Faq from "./components/Faq";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Hero from "./components/Hero";
 
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
       </header>
       <main>
         <section>
-          <Banner content={bannerContentList[0]} />
+          <Hero />
         </section>
         <section>
           <Features />

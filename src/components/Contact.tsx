@@ -2,7 +2,7 @@ import ButtonStandard from "./buttons/ButtonStandard";
 
 const Contact = () => {
   return (
-    <div className="mt-24 bg-blueBright md:mt-36">
+    <div className="mt-20 bg-blueBright md:mt-28">
       <div className="container flex max-w-[29rem] flex-col items-center gap-3 py-14 text-center text-white sm:gap-10 sm:py-16">
         <p className="text-[0.625rem] tracking-[0.5em] sm:text-xs">
           35,000+ ALREADY JOINED

@@ -11,6 +11,10 @@ import SectionHead from "./SectionHead";
 const Features = () => {
   const [activeFeatureHeaderId, setActiveFeatureHeaderId] = useState(1);
 
+  const handleSwitchHeader = (id: number) => {
+    setActiveFeatureHeaderId(id);
+  };
+
   const handleFeaturesHeaderContentMapping = () => {
     return featuresElementsList.map((element) => {
       return (
@@ -18,7 +22,8 @@ const Features = () => {
           key={element.id}
           label={element.label}
           headerId={element.id}
-          handleSwitchHeader={setActiveFeatureHeaderId}
+          handleSwitchHeader={handleSwitchHeader}
+          activeFeatureHeaderId={activeFeatureHeaderId}
         />
       );
     });
@@ -26,9 +31,7 @@ const Features = () => {
 
   const handleBannerContentMapping = () => {
     return bannerContentList.map((element) => {
-      if (element.isHero === true) {
-        return null;
-      } else if (activeFeatureHeaderId === element.id) {
+      if (activeFeatureHeaderId === element.id) {
         return <Banner key={element.id} content={element} />;
       }
     });
@@ -43,7 +46,7 @@ const Features = () => {
         />
       </div>
 
-      <div className="flex w-full max-w-[45rem] flex-col justify-between border-t-2 pb-5 text-center text-base sm:flex-row sm:border-t-0">
+      <div className="flex w-full max-w-[45rem] flex-col justify-center border-t-2 pb-5 text-center text-base sm:flex-row sm:border-t-0">
         {handleFeaturesHeaderContentMapping()}
       </div>
 

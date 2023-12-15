@@ -18,16 +18,6 @@ export const navElementsList = ["FEATURES", "PRICING", "CONTACT"];
 export const bannerContentList = [
   {
     id: 1,
-    isHero: true,
-    header: "A Simple Bookmark Manager",
-    paragraph:
-      "A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.",
-    buttonText: ["Get it on Chrome", "Get it on Firefox"],
-    image: bannerHero,
-    altText: "tablet device showing bookmark website",
-  },
-  {
-    id: 2,
     isHero: false,
     header: "Bookmark in one click",
     paragraph:
@@ -37,7 +27,7 @@ export const bannerContentList = [
     altText: "opened application window",
   },
   {
-    id: 3,
+    id: 2,
     isHero: false,
     header: "Intelligent search",
     paragraph:
@@ -47,7 +37,7 @@ export const bannerContentList = [
     altText: "opened application window with magnifying glass",
   },
   {
-    id: 4,
+    id: 3,
     isHero: false,
     header: "Share your bookmarks",
     paragraph:
@@ -57,14 +47,33 @@ export const bannerContentList = [
     altText:
       "opened application window with cell phone device and two people interacting",
   },
+  {
+    id: 4,
+    isHero: true,
+    header: "A Simple Bookmark Manager",
+    paragraph:
+      "A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.",
+    buttonText: ["Get it on Chrome", "Get it on Firefox"],
+    image: bannerHero,
+    altText: "tablet device showing bookmark website",
+  },
 ];
 
 /** Features */
 
 export const featuresElementsList = [
-  "Simple Bookmarking",
-  "Speedy Searching",
-  "Easy Sharing",
+  {
+    id: 1,
+    label: "Simple Bookmarking",
+  },
+  {
+    id: 2,
+    label: "Speedy Searching",
+  },
+  {
+    id: 3,
+    label: "Easy Sharing",
+  },
 ];
 
 /** SectionHead */

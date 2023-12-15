@@ -1,9 +1,18 @@
 type Props = {
-  text: string;
+  label: string;
+  headerId: number;
+  handleSwitchHeader: (id: number) => void;
 };
 
-const FeaturesHeader = ({ text }: Props) => {
-  return <h4 className="w-full text-gray-500 border-b-2 p-4">{text}</h4>;
+const FeaturesHeader = ({ label, headerId, handleSwitchHeader }: Props) => {
+  return (
+    <h4
+      onClick={() => handleSwitchHeader(headerId)}
+      className="w-full border-b-2 p-4 text-gray-500"
+    >
+      {label}
+    </h4>
+  );
 };
 
 export default FeaturesHeader;

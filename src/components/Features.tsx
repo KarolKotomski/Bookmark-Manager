@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   bannerContentList,
   featuresElementsList,
@@ -8,9 +9,18 @@ import FeaturesHeader from "./FeaturesHeader";
 import SectionHead from "./SectionHead";
 
 const Features = () => {
-  const handleHeaderContentMapping = () => {
-    return featuresElementsList.map((element, index) => {
-      return <FeaturesHeader key={index} text={element} />;
+  const [activeFeatureHeaderId, setActiveFeatureHeaderId] = useState(1);
+
+  const handleFeaturesHeaderContentMapping = () => {
+    return featuresElementsList.map((element) => {
+      return (
+        <FeaturesHeader
+          key={element.id}
+          label={element.label}
+          headerId={element.id}
+          handleSwitchHeader={setActiveFeatureHeaderId}
+        />
+      );
     });
   };
 
@@ -18,8 +28,8 @@ const Features = () => {
     return bannerContentList.map((element) => {
       if (element.isHero === true) {
         return null;
-      } else {
-        return <Banner content={element} />;
+      } else if (activeFeatureHeaderId === element.id) {
+        return <Banner key={element.id} content={element} />;
       }
     });
   };
@@ -34,7 +44,7 @@ const Features = () => {
       </div>
 
       <div className="flex w-full max-w-[45rem] flex-col justify-between border-t-2 pb-5 text-center text-base sm:flex-row sm:border-t-0">
-        {handleHeaderContentMapping()}
+        {handleFeaturesHeaderContentMapping()}
       </div>
 
       {handleBannerContentMapping()}

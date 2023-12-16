@@ -24,15 +24,15 @@ function App() {
   };
 
   useEffect(() => {
-    // Dodaj zdarzenie dla ruchu myszy na oknie
+    // Add event listener for mouse move near the window edge
     window.addEventListener("mousemove", handleMouseEnter);
 
-    // Pokaż modal po 30 sekundach
+    // Show modal after 30 sec
     const timer = setTimeout(() => {
       setIsModalActive(true);
     }, 30000);
 
-    // Usuń zdarzenie i wyczyść timer po odmontowaniu komponentu
+    // Remove event listener and clear timeout
     return () => {
       window.removeEventListener("mousemove", handleMouseEnter);
       clearTimeout(timer);
@@ -40,7 +40,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    // Ukryj/pokaż pasek przewijania
+    // Hide and show vertical scrollbar
     document.body.style.overflow = isModalActive ? "hidden" : "auto";
   }, [isModalActive]);
 

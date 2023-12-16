@@ -1,6 +1,6 @@
 const HamburgerIcon = () => {
   return (
-    <button className="fill-blueDark p-2 transition-colors duration-300 hover:fill-redBright">
+    <button className="fill-blueDark transition-colors duration-300 hover:fill-redBright">
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15">
         <path
           fillRule="evenodd"

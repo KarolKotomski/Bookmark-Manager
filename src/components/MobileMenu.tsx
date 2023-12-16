@@ -25,11 +25,11 @@ const MobileMenu = ({ isMenuActive, handleCloseMenu }: Props) => {
 
   return (
     <div
-      className={`fixed z-[99] flex h-full flex-col items-center justify-between overflow-hidden bg-blueDark py-9 opacity-95 transition-all duration-500 ${
-        isMenuActive ? "w-full px-6" : "w-0"
+      className={`fixed z-[99] flex h-full flex-col items-center justify-between overflow-hidden bg-blueDark py-9 opacity-95 transition-all duration-500 lg:py-12 ${
+        isMenuActive ? "w-full" : "w-0"
       }`}
     >
-      <div className="flex w-full flex-col gap-9">
+      <div className="flex w-full flex-col gap-9 container">
         <div
           onClick={handleCloseMenu}
           className="flex items-center justify-between transition-colors"
@@ -40,7 +40,7 @@ const MobileMenu = ({ isMenuActive, handleCloseMenu }: Props) => {
         <nav className="border-t border-slate-600">
           <ul className="flex flex-col items-center text-xl">
             {handleNavElementsMapping()}
-            <li className="w-full cursor-pointer rounded-md p-2 mt-6 text-center tracking-widest text-white transition duration-300 hover:text-redBright font-medium border-2 border-white">
+            <li className="mt-6 w-full cursor-pointer rounded-md border-2 border-white p-2 text-center font-medium tracking-widest text-white transition duration-300 hover:text-redBright">
               LOGIN
             </li>
           </ul>

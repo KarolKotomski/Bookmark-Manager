@@ -1,6 +1,6 @@
 const CloseIcon = () => {
   return (
-    <button className="fill-white p-2 transition duration-300">
+    <button className="fill-white transition duration-300">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15">
         <path
           fillRule="evenodd"

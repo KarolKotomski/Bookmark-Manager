@@ -36,7 +36,7 @@ const Navbar = () => {
     <>
       <MobileMenu isMenuActive={isMenuActive} handleCloseMenu={handleClick} />
 
-      <div className="container flex items-center justify-between py-9 md:py-12 text-sm tracking-widest">
+      <div className="container flex items-center justify-between py-9 lg:py-12 text-sm tracking-widest">
         <LogoIcon style="blue/white/dark" />
         <nav className="flex items-center gap-10">
           <ul className="hidden items-center gap-10 lg:flex">
@@ -45,7 +45,7 @@ const Navbar = () => {
               <ButtonHeader />
             </div>
           </ul>
-          <div onClick={handleClick} className="lg:invisible">
+          <div onClick={handleClick} className="lg:hidden">
             <HamburgerIcon />
           </div>
         </nav>

@@ -19,19 +19,19 @@ const Banner = ({ content }: Props) => {
   return (
     <>
       <div
-        className={`flex w-full flex-col-reverse items-center pt-5 ${
+        className={`items-top flex w-full flex-col-reverse pt-5 ${
           content.isHero ? "lg:flex-row" : "lg:flex-row-reverse"
         }`}
       >
         <div
-          className={`flex flex-col gap-7 p-5 text-center lg:w-1/2 lg:p-0 lg:text-left ${
-            !content.isHero && "lg:items-end"
+          className={`flex flex-col justify-center gap-7 p-5 text-center lg:w-1/2 lg:p-0 lg:text-left ${
+            !content.isHero && "lg:items-end lg:justify-start"
           }`}
         >
           <div
             className={`${
-              !content.isHero ? "lg:max-w-[80%]" : "xl:max-w[80%]"
-            } flex flex-col `}
+              !content.isHero ? "pt-5 lg:max-w-[80%]" : "xl:max-w[80%]"
+            } flex flex-col`}
           >
             <SectionHead
               header={content.header}
@@ -54,8 +54,14 @@ const Banner = ({ content }: Props) => {
             </div>
           </div>
         </div>
-        <div className="lg:max-w-[50%]">
-          {/* <img src={content.image} alt={content.altText} className="w-full" /> */}
+        <div className="flex w-full justify-center lg:max-w-[50%] lg:justify-end">
+          <img
+            src={content.image}
+            alt={content.altText}
+            className={`${content.id === 3 && "pr-[2.375rem]"} ${
+              content.id === 1 && "w-full"
+            }`}
+          />
         </div>
       </div>
     </>
@@ -63,12 +69,3 @@ const Banner = ({ content }: Props) => {
 };
 
 export default Banner;
-{
-  /* <div className="flex w-full items-center justify-center lg:max-w-[50%] lg:justify-start">
-<img
-  src={content.image}
-  alt={content.altText}
-  className="w-full"
-/>
-</div> */
-}

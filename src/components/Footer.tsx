@@ -20,7 +20,7 @@ const Footer = () => {
     <div className="bg-blueDark">
       <div className="container flex flex-col items-center gap-10 py-8 text-sm tracking-widest md:flex-row md:justify-between">
         <div className="flex flex-col items-center gap-10 md:flex-row ">
-          <LogoIcon style="blue/white/white" />
+          <LogoIcon fillColor="blue/white/white" />
           <nav>
             <ul className="flex flex-col gap-7 px-6 text-center md:flex-row">
               {handleNavElementsMapping()}

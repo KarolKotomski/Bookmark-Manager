@@ -1,6 +1,21 @@
-const CloseIcon = () => {
+type Props = {
+  fillColor: string;
+};
+
+const CloseIcon = ({ fillColor }: Props) => {
+  let selectedColor;
+
+  if (fillColor === "white") {
+    selectedColor = "white";
+  }
+  if (fillColor === "black") {
+    selectedColor = "black";
+  }
+
   return (
-    <button className="fill-white transition duration-300">
+    <button
+      className={`fill-${selectedColor} transition duration-300 hover:fill-redBright`}
+    >
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15">
         <path
           fillRule="evenodd"
@@ -10,5 +25,4 @@ const CloseIcon = () => {
     </button>
   );
 };
-
 export default CloseIcon;

@@ -1,22 +1,22 @@
 type Props = {
-  style: string;
+  fillColor: string;
 };
 
-const LogoBookmark = ({ style }: Props) => {
+const LogoBookmark = ({ fillColor }: Props) => {
   let circleColor;
   let insideCircleColor;
   let textColor;
-  if (style === "blue/white/dark") {
+  if (fillColor === "blue/white/dark") {
     circleColor = "#5267DF";
     insideCircleColor = "white";
     textColor = "#242A45";
   }
-  if (style === "blue/white/white") {
+  if (fillColor === "blue/white/white") {
     circleColor = "#5267DF";
     insideCircleColor = "white";
     textColor = "white";
   }
-  if (style === "white/dark/white") {
+  if (fillColor === "white/dark/white") {
     circleColor = "white";
     insideCircleColor = "#242A45";
     textColor = "white";

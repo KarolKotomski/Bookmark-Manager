@@ -29,18 +29,18 @@ const MobileMenu = ({ isMenuActive, handleCloseMenu }: Props) => {
         isMenuActive ? "w-full" : "w-0"
       }`}
     >
-      <div className="flex w-full flex-col gap-9 container">
+      <div className="container flex w-full flex-col gap-9">
         <div
           onClick={handleCloseMenu}
           className="flex items-center justify-between transition-colors"
         >
-          <LogoBookmark style="white/dark/white" />
-          <CloseIcon />
+          <LogoBookmark fillColor="white/dark/white" />
+          <CloseIcon fillColor="white" />
         </div>
         <nav className="border-t border-slate-600">
           <ul className="flex flex-col items-center text-xl">
             {handleNavElementsMapping()}
-            <li className="mt-6 w-full cursor-pointer rounded-md border-2 border-white p-2 text-center font-medium tracking-widest text-white transition duration-300 hover:text-redBright">
+            <li className="mt-6 w-full cursor-pointer rounded-md border-2 border-white p-2 text-center font-medium tracking-widest text-white transition duration-300 hover:border-redBright hover:text-redBright">
               LOGIN
             </li>
           </ul>

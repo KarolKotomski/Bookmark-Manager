@@ -13,7 +13,7 @@ const Faq = () => {
         />
       </div>
       <Accordion />
-      <ButtonStandard label="More Info" applyStyle="blue" />
+      <ButtonStandard buttonType="button" label="More Info" applyStyle="blue" />
     </div>
   );
 };

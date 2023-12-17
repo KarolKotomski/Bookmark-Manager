@@ -15,7 +15,7 @@ type Props = {
 
 const DownloadUnit = ({ content }: Props) => {
   return (
-    <div className="relative flex flex-col items-center gap-14 rounded-xl p-6 shadow-md">
+    <div className="relative flex min-w-fit flex-col items-center gap-14 rounded-xl p-6 shadow-md">
       <div className="flex flex-col items-center gap-1 whitespace-nowrap">
         <img src={content.icon} alt={content.altText} className="p-5" />
         <h3 className="text-lg font-medium tracking-wider text-blueDark ">
@@ -28,7 +28,7 @@ const DownloadUnit = ({ content }: Props) => {
       </div>
 
       <div className="flex items-center justify-center">
-        <ButtonStandard label="Add & Install Extension" applyStyle="blue" />
+        <ButtonStandard buttonType="button" label="Add & Install Extension" applyStyle="blue" />
       </div>
     </div>
   );

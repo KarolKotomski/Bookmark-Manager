@@ -55,7 +55,7 @@ const Form = () => {
         )}
       </div>
 
-      <ButtonStandard applyStyle="red" label="Contact Us" />
+      <ButtonStandard buttonType="submit" applyStyle="red" label="Contact Us" />
     </form>
   );
 };

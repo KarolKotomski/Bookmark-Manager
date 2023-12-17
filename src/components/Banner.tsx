@@ -41,12 +41,14 @@ const Banner = ({ content }: Props) => {
             <div className="flex w-full justify-center gap-3 pt-7 lg:w-fit lg:justify-start lg:gap-5">
               {content.buttonText[0] && (
                 <ButtonStandard
+                  buttonType="button"
                   label={content.buttonText[0]}
                   applyStyle="blue"
                 />
               )}
               {content.buttonText[1] && (
                 <ButtonStandard
+                  buttonType="button"
                   label={content.buttonText[1]}
                   applyStyle="grey"
                 />

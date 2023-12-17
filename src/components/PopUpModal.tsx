@@ -29,7 +29,11 @@ const PopUpModal = ({ closeRequest }: Props) => {
                 <div className="self-center text-center lg:p-10 lg:text-start">
                   <SectionHead header={header} paragraph={paragraph} />
                   <div className="pt-7">
-                    <ButtonStandard label={buttonText[0]} applyStyle="blue" />
+                    <ButtonStandard
+                      buttonType="button"
+                      label={buttonText[0]}
+                      applyStyle="blue"
+                    />
                   </div>
                 </div>
               </div>

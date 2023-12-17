@@ -11,33 +11,33 @@ import { useEffect, useState } from "react";
 function App() {
   const [isModalActive, setIsModalActive] = useState(false);
 
-  const handleMouseEnter = (event: any) => {
-    const mouseY = event.clientY;
+  // const handleMouseEnter = (event: any) => {
+  //   const mouseY = event.clientY;
 
-    if (mouseY <= 5) {
-      setIsModalActive(true);
-    }
-  };
+  //   if (mouseY <= 5) {
+  //     setIsModalActive(true);
+  //   }
+  // };
 
   const handleClose = () => {
     setIsModalActive(false);
   };
 
-  useEffect(() => {
-    // Add event listener for mouse move near the window edge
-    window.addEventListener("mousemove", handleMouseEnter);
+  // useEffect(() => {
+  //   // Add event listener for mouse move near the window edge
+  //   window.addEventListener("mousemove", handleMouseEnter);
 
-    // Show modal after 30 sec
-    const timer = setTimeout(() => {
-      setIsModalActive(true);
-    }, 30000);
+  //   // Show modal after 30 sec
+  //   const timer = setTimeout(() => {
+  //     setIsModalActive(true);
+  //   }, 30000);
 
-    // Remove event listener and clear timeout
-    return () => {
-      window.removeEventListener("mousemove", handleMouseEnter);
-      clearTimeout(timer);
-    };
-  }, []);
+  //   // Remove event listener and clear timeout
+  //   return () => {
+  //     window.removeEventListener("mousemove", handleMouseEnter);
+  //     clearTimeout(timer);
+  //   };
+  // }, []);
 
   useEffect(() => {
     // Hide and show vertical scrollbar

@@ -22,6 +22,7 @@ const ButtonStandard = ({ label, applyStyle }: Props) => {
 
   return (
     <button
+      type="button"
       className={`whitespace-nowrap rounded-md border-2 px-3 py-3 text-sm font-medium tracking-wide transition duration-300 xs:px-5 ${buttonStyle}`}
     >
       {label}

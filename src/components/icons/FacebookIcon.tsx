@@ -1,6 +1,9 @@
 const FacebookIcon = () => {
   return (
-    <button className="fill-white transition duration-300 hover:fill-redBright">
+    <button
+      type="button"
+      className="fill-white transition duration-300 hover:fill-redBright"
+    >
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
         <path
           fillRule="evenodd"

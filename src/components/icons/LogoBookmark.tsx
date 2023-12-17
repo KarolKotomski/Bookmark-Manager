@@ -23,7 +23,7 @@ const LogoBookmark = ({ fillColor }: Props) => {
   }
 
   return (
-    <button>
+    <button type="button">
       <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
         <g fill="none" fillRule="evenodd">
           <path

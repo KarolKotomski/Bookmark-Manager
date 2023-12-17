@@ -14,6 +14,7 @@ const CloseIcon = ({ fillColor }: Props) => {
 
   return (
     <button
+      type="button"
       className={`fill-${selectedColor} transition duration-300 hover:fill-redBright`}
     >
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15">

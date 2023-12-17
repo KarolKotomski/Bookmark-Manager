@@ -9,7 +9,7 @@ import PopUpModal from "./components/PopUpModal";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [isModalActive, setIsModalActive] = useState(false);
+  const [isModalActive, setIsModalActive] = useState(true);
 
   // const handleMouseEnter = (event: any) => {
   //   const mouseY = event.clientY;
@@ -39,10 +39,10 @@ function App() {
   //   };
   // }, []);
 
-  useEffect(() => {
-    // Hide and show vertical scrollbar
-    document.body.style.overflow = isModalActive ? "hidden" : "auto";
-  }, [isModalActive]);
+  // useEffect(() => {
+  //   // Hide and show vertical scrollbar
+  //   document.body.style.overflow = isModalActive ? "hidden" : "auto";
+  // }, [isModalActive]);
 
   return (
     <>

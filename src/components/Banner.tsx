@@ -1,3 +1,4 @@
+import BackgroundShape from "./BackgroundShape";
 import SectionHead from "./SectionHead";
 import ButtonStandard from "./buttons/ButtonStandard";
 
@@ -19,7 +20,7 @@ const Banner = ({ content }: Props) => {
   return (
     <>
       <div
-        className={`items-top flex w-full flex-col-reverse pt-5 ${
+        className={`flex w-full flex-col-reverse pt-5 ${
           content.isHero ? "lg:flex-row" : "lg:flex-row-reverse"
         }`}
       >
@@ -30,7 +31,7 @@ const Banner = ({ content }: Props) => {
         >
           <div
             className={`${
-              !content.isHero ? "pt-5 lg:max-w-[80%]" : "xl:max-w[80%]"
+              !content.isHero ? "pt-5 lg:max-w-[80%]" : "xl:max-w-[80%]"
             } flex flex-col`}
           >
             <SectionHead
@@ -56,14 +57,15 @@ const Banner = ({ content }: Props) => {
             </div>
           </div>
         </div>
-        <div className="flex w-full justify-center lg:max-w-[50%] lg:justify-end">
+        <div className="relative flex w-full justify-center lg:max-w-[50%] lg:justify-end">
           <img
             src={content.image}
             alt={content.altText}
-            className={`${content.id === 3 && "pr-[2.375rem]"} ${
+            className={` ${content.id === 3 && "xs:pr-[2.375rem]"} ${
               content.id === 1 && "w-full"
             }`}
           />
+          <BackgroundShape shape={content.id} />
         </div>
       </div>
     </>

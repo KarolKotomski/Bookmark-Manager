@@ -46,7 +46,7 @@ const Features = () => {
         />
       </div>
 
-      <div className="flex w-full max-w-[45rem] flex-col justify-center border-t-2 pb-5 text-center text-base sm:flex-row sm:border-t-0">
+      <div className="flex w-full max-w-[45rem] flex-col justify-center border-t-2 pb-10 text-center text-base sm:flex-row sm:border-t-0">
         {handleFeaturesHeaderContentMapping()}
       </div>
 

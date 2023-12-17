@@ -19,7 +19,7 @@ const BackgroundShape = ({ shape }: Props) => {
   }
   if (shape === 4) {
     applyStyle =
-      "left-[16%] top-[23%] h-[80%] rounded-l-full sm:left-[16%] md:left-[20%] lg:left-[16%] xl:left-[16%] w-screen -z-10";
+      "left-[16%] top-[30%] h-[75%] rounded-l-full sm:left-[30%] md:left-[30%] lg:left-[30%] xl:left-[30%] w-screen -z-10";
   }
   if (shape === "pop-up") {
     applyStyle =

@@ -14,7 +14,7 @@ const Accordion = () => {
   };
 
   return (
-    <div className="flex max-w-[33.9rem] flex-col md:border-t">
+    <div className="flex max-w-[33.9rem] flex-col pb-6 md:border-t">
       {faqContentList.map((element) => {
         return (
           <AccordionUnit

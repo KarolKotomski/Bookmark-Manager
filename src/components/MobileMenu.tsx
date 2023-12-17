@@ -29,13 +29,12 @@ const MobileMenu = ({ isMenuActive, handleCloseMenu }: Props) => {
         isMenuActive ? "w-full" : "w-0"
       }`}
     >
-      <div className="container flex w-full flex-col gap-9">
-        <div
-          onClick={handleCloseMenu}
-          className="flex items-center justify-between transition-colors"
-        >
+      <div className="container flex w-full max-w-3xl flex-col gap-9">
+        <div className="flex items-center justify-between transition-colors">
           <LogoBookmark fillColor="white/dark/white" />
-          <CloseIcon fillColor="white" />
+          <div onClick={handleCloseMenu} className="flex justify-center">
+            <CloseIcon fillColor="white" />
+          </div>
         </div>
         <nav className="border-t border-slate-600">
           <ul className="flex flex-col items-center text-xl">
@@ -47,7 +46,7 @@ const MobileMenu = ({ isMenuActive, handleCloseMenu }: Props) => {
         </nav>
       </div>
 
-      <div className="flex gap-10">
+      <div className="flex items-center gap-10">
         <FacebookIcon />
         <TwitterIcon />
       </div>

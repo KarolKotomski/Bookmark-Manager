@@ -12,12 +12,14 @@ const SectionHead = ({ header, paragraph, isHero }: Props) => {
           {header}
         </h1>
       ) : (
-        <h2 className="text-2xl font-medium text-blueDark md:text-[2rem] pt-10">
+        <h2 className="text-2xl font-medium text-blueDark md:text-[2rem]">
           {header}
         </h2>
       )}
 
-      <p className="text-sm leading-6 text-grealish md:text-lg pt-7">{paragraph}</p>
+      <p className="py-3 text-sm leading-6 text-grealish md:text-lg lg:py-5">
+        {paragraph}
+      </p>
     </>
   );
 };

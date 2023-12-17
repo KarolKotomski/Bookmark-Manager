@@ -5,7 +5,7 @@ import ButtonStandard from "./buttons/ButtonStandard";
 
 const Faq = () => {
   return (
-    <div className="container flex flex-col items-center justify-center gap-10 py-10">
+    <div className="container flex flex-col items-center justify-center gap-7 py-10 lg:mt-20">
       <div className="flex max-w-[34rem] flex-col items-center p-5 text-center md:gap-0">
         <SectionHead
           header={sectionHeadContentList[2].header}

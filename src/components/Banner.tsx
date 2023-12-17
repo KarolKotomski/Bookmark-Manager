@@ -20,8 +20,8 @@ const Banner = ({ content }: Props) => {
   return (
     <>
       <div
-        className={`flex w-full flex-col-reverse pt-5 ${
-          content.isHero ? "lg:flex-row" : "lg:flex-row-reverse"
+        className={`flex w-full flex-col-reverse gap-16 lg:gap-0 ${
+          content.isHero ? "lg:flex-row" : "lg:flex-row-reverse sm:gap-24"
         }`}
       >
         <div
@@ -31,7 +31,7 @@ const Banner = ({ content }: Props) => {
         >
           <div
             className={`${
-              !content.isHero ? "pt-5 lg:max-w-[80%]" : "xl:max-w-[80%]"
+              !content.isHero ? "lg:max-w-[80%] lg:pt-14" : "xl:max-w-[80%]"
             } flex flex-col`}
           >
             <SectionHead
@@ -39,7 +39,7 @@ const Banner = ({ content }: Props) => {
               paragraph={content.paragraph}
               isHero={content.isHero}
             />
-            <div className="flex w-full justify-center gap-3 pt-7 lg:w-fit lg:justify-start lg:gap-5">
+            <div className={`w-full justify-center gap-3 lg:w-fit lg:justify-start lg:gap-5 ${content.isHero ? "flex" : "hidden lg:flex"}`}>
               {content.buttonText[0] && (
                 <ButtonStandard
                   buttonType="button"
@@ -61,7 +61,7 @@ const Banner = ({ content }: Props) => {
           <img
             src={content.image}
             alt={content.altText}
-            className={` ${content.id === 3 && "xs:pr-[2.375rem]"} ${
+            className={`${content.id === 3 && "xs:pr-[2.375rem]"} ${
               content.id === 1 && "w-full"
             }`}
           />

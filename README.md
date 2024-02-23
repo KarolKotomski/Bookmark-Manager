@@ -24,7 +24,6 @@ Live Demo: [Bookmark-Manager](https://bookmark-manager-kk.vercel.app/)
 ## Features
 
 - Responsive design
-- Pop-up modal showing 30 seconds after page entry and when the mouse touches the top screen edge
 - A countdown counter at the bottom of the page, ticking down to zero in 20 seconds after page entry.
 
 ## License
